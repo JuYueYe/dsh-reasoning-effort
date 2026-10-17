@@ -1,0 +1,7 @@
+# 统一换行符：Windows 上 core.autocrlf=true 的检出会把工作区写成 CRLF，
+# 而 dist/ 的字节一致性是构建脚本（scripts/build-fork.mjs 的「唯一命中」断言）
+# 和 vendor/ 逐字节 fork 的前提，所以这里强制 LF。
+* text=auto eol=lf
+*.png binary
+*.webm binary
+*.tgz binary
