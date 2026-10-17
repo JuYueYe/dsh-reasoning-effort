@@ -43,13 +43,13 @@ id 输入 · 显示名输入 · › 折叠箭头 · 🗑 垃圾桶
 
 ## 怎么装
 
-本包位于仓库 [`JuYueYe/dsh-personal-model-picker`](https://github.com/JuYueYe/dsh-personal-model-picker) 的 `packages/dsh-reasoning-effort` 子目录。**不能用 `github:` 规格安装**——那个规格装的是仓库根目录的「双栏模型选择器」。先克隆仓库，再按绝对路径安装子目录：
+本包**独立成库**，仓库根就是包根，一条命令即可，不需要克隆、不需要填任何本地路径：
 
-```
-git clone https://github.com/JuYueYe/dsh-personal-model-picker
+```bash
+dsh plugin --profile web add github:JuYueYe/dsh-reasoning-effort
 ```
 
-然后在 **Plugins 页 → 安装** 里填 `<克隆目录>/packages/dsh-reasoning-effort`；或先 `npm pack` 打成 tgz 再填 tgz 路径。
+也可以在 **Plugins 页 → 安装** 里填 `github:JuYueYe/dsh-reasoning-effort`（等价）。仓库里 `dist/` 是入库产物，安装时**不跑构建**，不需要 Node 工具链。
 
 装完**刷新页面**（Ctrl+R）；座位没出现就退出 DSH 重开。
 
@@ -113,13 +113,13 @@ settings.models.provider-card   (keyed, replaceRisk: none, 派发键 = 该卡片
 
 ## 怎么装
 
-本包位于仓库 [`JuYueYe/dsh-personal-model-picker`](https://github.com/JuYueYe/dsh-personal-model-picker) 的 `packages/dsh-reasoning-effort` 子目录。**不能用 `github:` 规格安装**——那个规格装的是仓库根目录的「双栏模型选择器」。先克隆仓库，再按绝对路径安装子目录：
+本包**独立成库**，仓库根就是包根，一条命令即可，不需要克隆、不需要填任何本地路径：
 
-```
-git clone https://github.com/JuYueYe/dsh-personal-model-picker
+```bash
+dsh plugin --profile web add github:JuYueYe/dsh-reasoning-effort
 ```
 
-然后在 **Plugins 页 → 安装** 里填 `<克隆目录>/packages/dsh-reasoning-effort`；或先 `npm pack` 打成 tgz 再填 tgz 路径。
+也可以在 **Plugins 页 → 安装** 里填 `github:JuYueYe/dsh-reasoning-effort`（等价）。仓库里 `dist/` 是入库产物，安装时**不跑构建**，不需要 Node 工具链。
 
 装完**刷新页面**（Ctrl+R）；座位没出现就退出 DSH 重开。
 
